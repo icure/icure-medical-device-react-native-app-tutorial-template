@@ -20,7 +20,7 @@ export const Register = (): JSX.Element => {
     },
   });
   const navigate = useNavigate();
-  
+
   const [isWaitingForCode, setWaitingForCode] = useState(false);
 
   const onAskCode = (data: {userEmail: string; userFirstName: string; userLastName: string}) => {
@@ -78,6 +78,10 @@ export const Register = (): JSX.Element => {
               {errors.userCode && <ErrorMessage text="This field is required." />}
             </>
           ) : null}
+        </View>
+
+        <View style={styles.webviewContainer}>
+          <WebViewComponent sitekey={Config.FRIENDLY_CAPTCHA_SITE_KEY} onFinish={value => dispatch(setRecaptcha({recaptcha: value}))} />
         </View>
 
         {isWaitingForCode ? (
