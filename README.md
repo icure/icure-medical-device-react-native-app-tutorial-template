@@ -22,6 +22,16 @@ Make sure the following tools are installed on your machine:
 
 *Note: XCode and Android Studio are needed in order to run your app on iPhone & Android emulators*
 
+Also, at the root of your project, create a file `.env` and add the following environment variables inside it:
+- **EXTERNAL_SERVICES_SPEC_ID**,
+- **EMAIL_AUTHENTICATION_PROCESS_ID** and/or **SMS_AUTHENTICATION_PROCESS_ID**,
+- **FRIENDLY_CAPTCHA_SITE_KEY**,
+- **PARENT_ORGANISATION_ID**
+
+Check out our [dedicated tutorial](https://docs.icure.com/sdks/tutorial/petra/foreword) in order to know what are those information and how to get them.
+
+**WARNING: Without these information, you won't be able to complete an authentication**
+
 
 ## Which technologies are used ?
 Petra is a mobile app implemented using React Native. It includes the following technologies: 
