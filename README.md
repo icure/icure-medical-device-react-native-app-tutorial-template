@@ -10,6 +10,7 @@ Petra is a menstrual cycle tracking application that was created by including ou
 
 Petra is a patient-oriented medical App, allowing patients to manage their menstrual cycle tracking data (CRUD operations) and optionally, share them with their doctor(s). Through our [dedicated tutorial](https://docs.icure.com/sdks/tutorial/petra/foreword), you'll learn the most important concepts of iCure MedTech and how to use / implement them for your solution. 
 
+
 *This repository represents the initial code of Petra to start the tutorial, and so does not contain any code related to iCure. The final version of Petra can be found [here](https://github.com/icure/icure-medical-device-react-native-app-tutorial).*
 
 
